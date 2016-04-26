@@ -1,6 +1,10 @@
 
 raw_images/
 
+.ipynb_checkpoints/
+
+*.pyc
 *.log
 *.jpg
+*.jpeg
 *.png

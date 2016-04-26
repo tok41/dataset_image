@@ -40,9 +40,6 @@ def face_trimmer(filename, output_prfx = "face", counter = 0, path = ".", cascad
         cv2.imwrite("%s/%s_%07d.png"%(path, output_prfx, cnt), img_face)
         cnt += 1
 
-    #cv2.imshow("AnimeFaceDetect", image)
-    #cv2.waitKey(0)
-    #cv2.imwrite("out.png", image)
     print "detected face_num : %s"%len(faces)
     return cnt
 

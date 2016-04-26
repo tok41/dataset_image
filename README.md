@@ -7,11 +7,13 @@
 * python 2.7
 * and more...
 
+
 ## DataSet
 
-### Anime-Image
+### anime_face
 
-### Anime-Faces
+* Webからアニメ画像をスクレイピング
+* OpenCVで顔領域の抽出
 
 ### YouTube Movies
 

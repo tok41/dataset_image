@@ -1,18 +1,28 @@
-# 学習用の顔画像データ生成
+# Anime-Faces
 
-* 顔画像データを生成するためのいろいろ
+* 顔画像データを生成する
 
-## ファイル
+## Require
+
+```
+- Python (2.7で確認)
+- OpenCV (2.4.12で確認)
+
+```
+
+## Files
 
 * anime_face.py
   * 指定したディレクトリ内の画像（アニメ）の中から顔部分だけを切り出す
 * face_trimmer.py
   * アニメ画像の中から顔部分をトリミングするための関数
+
 * lbpcascade_animeface.xml
   * アニメ顔画像を検出するためのOpenCVのカスケードファイル
+  * https://github.com/nagadomi/lbpcascade_animeface
 
 
-## 使い方
+## Usage
 
 * anime_face.py
 
