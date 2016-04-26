@@ -1,0 +1,17 @@
+from scrapy.spider import BaseSpider
+from scrapy.selector import HtmlXPathSelector
+from scrapy.http.request import Request
+from image_test.items import ImageTestItem
+
+class FooSpider(BaseSpider):
+    name = "image_test"
+    allowed_domains = ["image_test.org"]
+    start_urls = ["http://safebooru.donmai.us"]
+
+    def parse(self, response):
+        hxs = HtmlXPathSelector(response)
+
+        item = ImageTestItem()
+        image_urls = hxs.select('//img/@src').extract()
+        item['image_urls'] = ['http://safebooru.donmai.us/'+x for x in image_urls]
+        return item
