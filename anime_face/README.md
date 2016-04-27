@@ -1,24 +1,32 @@
-# 学習用の顔画像データ生成
+# Anime Face Trimmer
 
-* 顔画像データを生成するためのいろいろ
+* アニメ画像から顔画像データを生成する
 
-## ファイル
+## Require
+
+```
+- python
+- opencv 
+-- 顔検出用のカスケードファイルが必要(https://github.com/nagadomi/lbpcascade_animeface)
+```
+
+## Files
 
 * anime_face.py
   * 指定したディレクトリ内の画像（アニメ）の中から顔部分だけを切り出す
 * face_trimmer.py
-  * アニメ画像の中から顔部分をトリミングするための関数
+  * アニメ画像の中から顔部分をトリミングするためのクラス定義
 * lbpcascade_animeface.xml
   * アニメ顔画像を検出するためのOpenCVのカスケードファイル
+  * https://github.com/nagadomi/lbpcascade_animeface
 
 
 ## 使い方
 
 * anime_face.py
+  * face_trimmer.py でも同じメイン関数が書いてあるので、どっちでも良い
 
 ```
-$ python anime_face.py ./raw_images
-## 第１引数 : 元画像のディレクトリ。このディレクトリ内の画像の中から顔部分を抽出
-      出力先はハードコーディングしているので、confとか作った方が幸せかも
+$ python anime_face.py
 ```
 
