@@ -5,8 +5,8 @@
 ## Require
 
 ```
-- python
-- opencv 
+- Python (2.7で確認)
+- OpenCV (2.4.12で確認)
 -- 顔検出用のカスケードファイルが必要(https://github.com/nagadomi/lbpcascade_animeface)
 ```
 
@@ -21,7 +21,7 @@
   * https://github.com/nagadomi/lbpcascade_animeface
 
 
-## 使い方
+## Usage
 
 * anime_face.py
   * face_trimmer.py でも同じメイン関数が書いてあるので、どっちでも良い
